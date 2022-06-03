@@ -4,9 +4,7 @@ const { CleanWebpackPlugin } = require(`clean-webpack-plugin`);
 const paths = require(`./paths`);
 
 module.exports = {
-  entry: {
-    main: `${paths.src}/scripts/index.ts`,
-  },
+  entry: { main: `${paths.src}/scripts/index.ts` },
   module: {
     rules: [
       {
@@ -17,7 +15,7 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        loader: `babel-loader`
+        loader: `babel-loader`,
       },
       {
         test: /\.js$/,
@@ -31,11 +29,7 @@ module.exports = {
           { loader: `css-loader` },
           {
             loader: `postcss-loader`,
-            options: {
-              postcssOptions: {
-                config: `wp_config/postcss.config.js`,
-              },
-            },
+            options: { postcssOptions: { config: `wp_config/postcss.config.js` } },
           },
           { loader: `sass-loader` },
         ],
@@ -46,9 +40,7 @@ module.exports = {
       },
     ],
   },
-  resolve: {
-    extensions: [`.tsx`, `.ts`, `.js`],
-  },
+  resolve: { extensions: [`.tsx`, `.ts`, `.js`] },
   plugins: [
     new HtmlWebpackPlugin({
       template: `${paths.src}/template/index.html`,
