@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "./eslint-packages/base/index.json",
+    "./eslint-packages/ts/index.json",
+    "./eslint-packages/react/index.json"
+  ],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "plugins": ["import"],
+  "rules": {}
+}
