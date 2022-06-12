@@ -6,9 +6,10 @@
   },
   "extends": ["airbnb"],
   "parserOptions": {
-    "ecmaVersion": "latest"
+    "ecmaVersion": "latest",
+    "sourceType": "module"
   },
-  "plugins": ["prettier"],
+  "plugins": ["import", "prettier"],
   "rules": {
     "quotes": ["error", "backtick"],
     "prettier/prettier": "error"
