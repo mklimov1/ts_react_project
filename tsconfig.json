@@ -4,6 +4,6 @@
     "noImplicitAny": true,
     "jsx": "react"
   },
-  "include": ["src/**/*", "./.eslintrc.json"],
+  "include": ["src/**/*", "./.eslintrc.json", "./wp_config/**/*"],
   "exclude": ["node_modules"]
 }
