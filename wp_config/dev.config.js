@@ -7,10 +7,14 @@ module.exports = merge(common, {
   mode: `development`,
   devtool: `inline-source-map`,
   devServer: {
+    host: `0.0.0.0`,
     historyApiFallback: true,
     open: false,
-    compress: true,
+    compress: false,
     hot: true,
+    client: {
+      overlay: true,
+    },
   },
   plugins: [new webpack.HotModuleReplacementPlugin()],
 });

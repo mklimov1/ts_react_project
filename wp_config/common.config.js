@@ -36,11 +36,11 @@ module.exports = {
       },
       {
         test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
-        type: `asset/resource`,
+        type: `asset`,
       },
     ],
   },
-  resolve: { extensions: [`.tsx`, `.ts`, `.js`] },
+  resolve: { extensions: [`.tsx`, `.ts`, `.js`, `.jsx`] },
   plugins: [
     new HtmlWebpackPlugin({
       template: `${paths.src}/template/index.html`,
