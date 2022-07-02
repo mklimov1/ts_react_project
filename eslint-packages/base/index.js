@@ -28,5 +28,6 @@ module.exports = {
       },
     ],
     "lines-between-class-members": `off`,
+    "no-underscore-dangle": `off`,
   },
 };
