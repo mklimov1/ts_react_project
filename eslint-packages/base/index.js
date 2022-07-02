@@ -27,5 +27,6 @@ module.exports = {
         tsx: `never`,
       },
     ],
+    "lines-between-class-members": `off`,
   },
 };
