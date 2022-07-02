@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require(`clean-webpack-plugin`);
 const paths = require(`./paths`);
 
 module.exports = {
-  entry: { main: `${paths.src}/scripts/index.ts` },
+  entry: { main: `${paths.src}/scripts/main.ts` },
   module: {
     rules: [
       {
@@ -29,13 +29,15 @@ module.exports = {
           { loader: `css-loader` },
           {
             loader: `postcss-loader`,
-            options: { postcssOptions: { config: `wp_config/postcss.config.js` } },
+            options: {
+              postcssOptions: { config: `wp_config/postcss.config.js` },
+            },
           },
           { loader: `sass-loader` },
         ],
       },
       {
-        test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+        test: /\.(?:ico|gif|png|jpg|jpeg|fbx|glb|gltf)$/i,
         type: `asset`,
       },
     ],

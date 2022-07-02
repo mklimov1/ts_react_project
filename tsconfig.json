@@ -1,9 +1,16 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "es2021",
     "noImplicitAny": false,
+    "sourceMap": true,
     "jsx": "react",
-    "moduleResolution": "node",
+    "moduleResolution": "node"
   },
-  "include": ["src/**/*", "./.eslintrc.json", "./wp_config/**/*"]
+  "include": [
+    "src/**/*",
+    "./wp_config/**/*",
+    ".eslintrc.js",
+    "eslint-packages/**/*"
+  ],
+  "exclude": []
 }
